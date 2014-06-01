@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Control de Turno</title>
+		<script src='remote.js'></script>
+		<link rel="stylesheet" type="text/css" href="turno.css" media="all" />
+	</head>
+	<body onload='init();' >
+		<label for="r_counter">Contador (cursores): </label>
+		<input type="number" id='r_counter' value="1" min="0" onchange='set_parent_counter();'/>
+		</br>
+		</br>
+		<label for="r_scrolltext">Marquesina: </label>
+		<input type="text" id='r_scrolltext' placeholder="mensaje marquesina" />
+		</br>
+		<label for="r_scrollspeed">Velocidad (+,-): </label>
+		<input name="r" type="range"  id='r_scrollspeed' min="1" max="9" value="5" oninput="update_scroll();">
+		<output id="r_showspeed" for="r_scrollspeed">0</output>/9
+	</body>
+</html>

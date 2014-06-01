@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Turno</title>
+		<script src='turno.js'></script>
+		<link rel="stylesheet" type="text/css" href="turno.css" media="all" />
+	</head>
+	<body onload='init();' onclick="open_remote();">
+		<div id="top" >
+			<img src="escudo-logo-ausias.png" alt="CIPFP Ausias March" class="toplogo"/>
+			<div class="topgap"></div>
+			<font color="red" size="40" class="toptext">Turno Secretaria</font>
+		</div>
+  		<div id='container'>
+                        <input type="hidden" id='counter' value="1" />
+                        <input type="hidden" id='counter_force' value="" />
+                        <input type="hidden" id='scrolltext' value="" />
+                        <input type="hidden" id='scroll_forcetext' value="" />
+                        <input type="hidden" id='scrollspeed' value="5" />
+                        <input type="hidden" id='scroll_forcespeed' value="" />
+                </div>
+		<div id="main">
+			<canvas id="turn" width="1200" height="451" > </canvas>
+			<canvas id="marquee" width="1060" height="100" style="border: 2px solid grey;"></canvas>
+		</div>
+	</body>
+</html>
