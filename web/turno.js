@@ -180,6 +180,7 @@ function draw() {
 			drawHHMMDigit_inv(last_time, iDigit);
 		}
 		last_time = time;
+		new Audio('sound.wav').play()
 	} else {
 		// Draw the HHHH digits onto the canvas
 		for(iDigit = 0; iDigit < 4; iDigit++) {
